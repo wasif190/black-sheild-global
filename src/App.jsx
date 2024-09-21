@@ -1,9 +1,13 @@
 import React from 'react'
+import { About, Contact, Home, Service } from './Components';
 
 function App() {
   return (
-    <div className='text-2xl'>
-      Black sheild global
+    <div>
+      <Home/>
+      <Service/>
+      <About/>
+      <Contact/>
     </div>
   )
 }

@@ -1,3 +1,88 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        padding: 0px 4%;
+    }
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    cursor: pointer;
+}
+
+.nav-list i {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-list i {
+        display: block;
+    }
+}
+
+.hover-nav {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+}
+
+.hover-nav::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    border-radius: 1px 1px;
+}
+
+.hover-nav:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.profile-img {
+    background: url(../src/assets/hero-img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: blob 8s ease-in-out infinite 1s;
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%
+}
+
+.navbar--active-content {
+    color: #6a9eff;
+}
+
+@keyframes blob {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-list i {
+        display: block;
+    }
+}
