@@ -10,7 +10,7 @@ function Home() {
             <Navbar/>
         </div>
         <div className='h-screen flex items-center px-[4%] lg:px-[10%] relative'>
-            <div className='xl:w-[50%] md:w-[60%] lg:-mt-[5rem] md:-mt-[8rem] -mt-[9rem]'>
+            <div className='xl:w-[50%] md:w-[60%] lg:-mt-[5rem] -mt-[8rem]'>
                 <h1 className='sm:text-4xl text-3xl font-bold' data-aos="fade-right">Your Trusted Partner in Recruitment and HR Solutions</h1>
                 <p className='mt-2 z-10'>
                     We provide customized recruitment and HR services to help businesses 
