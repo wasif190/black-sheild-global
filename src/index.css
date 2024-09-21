@@ -21,12 +21,12 @@
     cursor: pointer;
 }
 
-.nav-list i {
+.nav-list svg {
     display: none;
 }
 
 @media screen and (max-width: 1024px) {
-    .nav-list i {
+    .nav-list svg {
         display: block;
     }
 }
@@ -82,7 +82,13 @@
 }
 
 @media screen and (max-width: 768px) {
-    .nav-list i {
+    .nav-list svg {
         display: block;
     }
+}
+
+
+svg {
+    width: 18px;
+    padding-bottom: 5px;
 }
