@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "title": "Talent Acquisition",
+        "description": "We specialize in identifying, attracting, and securing skilled professionals who align with our clients' organizational goals and culture. Our comprehensive recruitment process ensures the right fit for both candidates and employers.",
+        "image": "./serviceAssets/talent.jpeg"
+    },
+    {
+        "id": 2,
+        "title": "Training and Development",
+        "description": "We offer a range of training programs designed to enhance employee skills, boost productivity, and drive organizational success. Our training solutions are customized to address specific challenges and objectives, ensuring effective learning outcomes.",
+        "image": "/serviceAssets/training.jpg"
+    },
+    {
+        "id": 3,
+        "title": "HR Consulting",
+        "description": "Our expert consultants provide strategic HR guidance, helping organizations optimize their human capital and implement best practices in talent management, performance evaluation, and employee engagement.",
+        "image": "/serviceAssets/consulting.jpg"
+    }
+]
