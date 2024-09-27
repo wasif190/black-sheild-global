@@ -20,7 +20,7 @@ function About() {
             Black Shield Global is dedicated to connecting organizations with top talent and enhancing 
             employee development through tailored training programs. The firm also provides strategic HR 
             consulting, helping companies implement best practices in talent management and performance evaluation. 
-            Their client-centric approach and commitment to innovation set them apart as a trusted partner in the HR industry.
+            Our client-centric approach and commitment to innovation set Us apart as a trusted partner in the HR industry.
             <br/> <br/>
             Our journey of over a decade has allowed us to build an extensive network of top-tier 
             professionals and experts across industries. We pride ourselves on our innovative approach, 
