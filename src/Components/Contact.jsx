@@ -15,6 +15,15 @@ function Contact() {
                     <span className='text-2xl w-[40px] h-[40px] mx-auto text-white bg-red-600 flex justify-center items-center rounded-full'>
                         <ion-icon name="call-outline"></ion-icon>
                     </span>
+                    <h2 className='text-xl font-bold py-2'>Address</h2>
+                    <p className='text-lg'>
+                        Manjhi Chatti, Above Jio Office, Nearby Old Petrol Pump, Manjhi, Saran, Bihar-841313
+                    </p>
+                </div>
+                <div className='border w-full p-4 text-center rounded-md bg-white'>
+                    <span className='text-2xl w-[40px] h-[40px] mx-auto text-white bg-red-600 flex justify-center items-center rounded-full'>
+                        <ion-icon name="call-outline"></ion-icon>
+                    </span>
                     <h2 className='text-xl font-bold py-2'>Phone Number</h2>
                     <p className='text-lg'>+91 8507633137</p>
                     <p className='text-lg'>+91 8507633137</p>
@@ -26,15 +35,6 @@ function Contact() {
                     <h2 className='text-xl font-bold py-2'>Email</h2>
                     <p className='text-lg cursor-pointer hover:text-red-600'>
                         <a href='mailto:info@blacksheildglobal.com'>info@blacksheildglobal.com</a>
-                    </p>
-                </div>
-                <div className='border w-full p-4 text-center rounded-md bg-white'>
-                    <span className='text-2xl w-[40px] h-[40px] mx-auto text-white bg-red-600 flex justify-center items-center rounded-full'>
-                        <ion-icon name="call-outline"></ion-icon>
-                    </span>
-                    <h2 className='text-xl font-bold py-2'>Address</h2>
-                    <p className='text-lg'>
-                        Manjhi Chatti, Above Jio Office, Nearby Old Petrol Pump, Manjhi, Saran, Bihar-841313
                     </p>
                 </div>
             </div>
