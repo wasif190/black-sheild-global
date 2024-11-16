@@ -13,11 +13,11 @@ function About() {
         </div>
         <div className='mt-[100px] pt-5 md:px-[12%] px-[4%]'>
           <p className='text-lg leading-[30px] text-justify'>
-            Black Shield Global LLP is a premier HR consultancy firm that focuses on providing 
+            Black Sheild Global LLP is a premier HR consultancy firm that focuses on providing 
             exceptional human resource recruitment and training solutions to clients worldwide. 
             With a strong presence in India, the firm leverages its extensive network and 
             expertise to offer customized services for businesses across various sectors. 
-            Black Shield Global is dedicated to connecting organizations with top talent and enhancing 
+            Black Sheild Global is dedicated to connecting organizations with top talent and enhancing 
             employee development through tailored training programs. The firm also provides strategic HR 
             consulting, helping companies implement best practices in talent management and performance evaluation. 
             Our client-centric approach and commitment to innovation set Us apart as a trusted partner in the HR industry.
@@ -28,7 +28,7 @@ function About() {
             excellent results. This synergy, backed by meticulous control measures, has enabled us to gain 
             the trust and loyalty of our clients in various regions worldwide.
             <br/><br/>
-            At Black Shield Global, we believe in fostering collaboration and teamwork, creating an environment 
+            At Black Sheild Global, we believe in fostering collaboration and teamwork, creating an environment 
             where individual talent thrives within cohesive teams. We regularly conduct in-depth training 
             sessions and workshops, aimed at assessing and enhancing the skills of our workforce. 
             This commitment to continuous improvement empowers our professionals to deliver top-quality 

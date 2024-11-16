@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll'; // For smooth scrolling
-import { NavLink } from 'react-router-dom'; // For route navigation
+import { NavLink, useLocation } from 'react-router-dom'; // For route navigation
 import Logo from '../assets/logo.png'; // Ensure the path is correct
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
+  const location = useLocation(); // Hook to get current route
 
   // Function to close the menu
   const closeMenu = () => setOpen(false);
+
+  // Check if the current route is "/about" or "/contact"
+  const isLimitedNav = location.pathname === '/about' || location.pathname === '/contact';
 
   return (
     <nav className='shadow-md w-full fixed top-0 left-0 bg-white z-50'>
@@ -33,55 +37,70 @@ const Nav = () => {
             open ? 'top-20 rounded-b-lg' : 'top-[-490px]'
           }`}
         >
-          {/* Home (Smooth Scroll) */}
+          {/* Home */}
           <li className='md:ml-8 text-lg md:my-0 my-7'>
-            <ScrollLink
-              to="home"
-              smooth={true}
-              offset={-70}
-              duration={500}
-              className="text-gray-800 hover:text-gray-400 duration-500 cursor-pointer"
-              onClick={closeMenu}
-            >
-              Home
-            </ScrollLink>
+            {isLimitedNav ? (
+              <NavLink
+                to="/"
+                className="text-gray-800 hover:text-gray-400 duration-500"
+                onClick={closeMenu}
+              >
+                Home
+              </NavLink>
+            ) : (
+              <ScrollLink
+                to="home"
+                smooth={true}
+                offset={-70}
+                duration={500}
+                className="text-gray-800 hover:text-gray-400 duration-500 cursor-pointer"
+                onClick={closeMenu}
+              >
+                Home
+              </ScrollLink>
+            )}
           </li>
 
-          {/* About Us (Route Navigation) */}
-          <li className='md:ml-8 text-lg md:my-0 my-7'>
-            <NavLink
-              to="/about"
-              className="text-gray-800 hover:text-gray-400 duration-500"
-              onClick={closeMenu}
-            >
-              About Us
-            </NavLink>
-          </li>
+          {/* Show these links only if not in limited nav */}
+          {!isLimitedNav && (
+            <>
+              {/* About Us */}
+              <li className='md:ml-8 text-lg md:my-0 my-7'>
+                <NavLink
+                  to="/about"
+                  className="text-gray-800 hover:text-gray-400 duration-500"
+                  onClick={closeMenu}
+                >
+                  About Us
+                </NavLink>
+              </li>
 
-          {/* Service (Smooth Scroll) */}
-          <li className='md:ml-8 text-lg md:my-0 my-7'>
-            <ScrollLink
-              to="service"
-              smooth={true}
-              offset={-70}
-              duration={500}
-              className="text-gray-800 hover:text-gray-400 duration-500 cursor-pointer"
-              onClick={closeMenu}
-            >
-              Service
-            </ScrollLink>
-          </li>
+              {/* Service */}
+              <li className='md:ml-8 text-lg md:my-0 my-7'>
+                <ScrollLink
+                  to="service"
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                  className="text-gray-800 hover:text-gray-400 duration-500 cursor-pointer"
+                  onClick={closeMenu}
+                >
+                  Service
+                </ScrollLink>
+              </li>
 
-          {/* Contact Us (Route Navigation) */}
-          <li className='md:ml-8 text-lg md:my-0 my-7'>
-            <NavLink
-              to="/contact"
-              className="text-gray-800 hover:text-gray-400 duration-500"
-              onClick={closeMenu}
-            >
-              Contact Us
-            </NavLink>
-          </li>
+              {/* Contact Us */}
+              <li className='md:ml-8 text-lg md:my-0 my-7'>
+                <NavLink
+                  to="/contact"
+                  className="text-gray-800 hover:text-gray-400 duration-500"
+                  onClick={closeMenu}
+                >
+                  Contact Us
+                </NavLink>
+              </li>
+            </>
+          )}
         </ul>
       </div>
     </nav>

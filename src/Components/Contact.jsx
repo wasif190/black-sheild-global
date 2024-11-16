@@ -25,8 +25,8 @@ function Contact() {
                         <ion-icon name="call-outline"></ion-icon>
                     </span>
                     <h2 className='text-xl font-bold py-2'>Phone Number</h2>
-                    <p className='text-lg'>+91 8507633137</p>
-                    <p className='text-lg'>+91 8507633137</p>
+                    <p className='text-lg'>+91 9934660878</p>
+                    <p className='text-lg'>+91 9523464728</p>
                 </div>
                 <div className='border w-full p-4 text-center rounded-md bg-white'>
                     <span className='text-2xl w-[40px] h-[40px] mx-auto text-white bg-red-600 flex justify-center items-center rounded-full'>
