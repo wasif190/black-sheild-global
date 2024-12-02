@@ -1,23 +1,66 @@
 import React from 'react';
-import fiveStar from '../assets/5star.png';
 
 function Sec1() {
   return (
-    <div className='flex lg:flex-row flex-col bg-sky-50 md:px-[12%] px-[8%] items-center py-[30px] justify-between lg:gap-[5rem] gap-[2rem]'>
-        <div className='md:w-[500px] w-[300px]'>
-            <img src={fiveStar}/>
+    <div className="md:px-[12%] px-[4%] py-[100px] bg-white flex justify-center">
+      <section className="grid lg:grid-cols-3 lg:gap-[5rem] gap-[2rem]">
+        {/* Circle 1: Border with 4 sections */}
+        <div
+          className="relative w-[200px] h-[200px] flex justify-center items-center rounded-full"
+          style={{
+            background: `conic-gradient(
+              #1e3a8a 0% 25%,      /* Dark Blue */
+              #60a5fa 25% 50%,    /* Light Blue */
+              #1e3a8a 50% 75%,    /* Dark Blue */
+              #60a5fa 75% 100%    /* Light Blue */
+            )`,
+          }}
+        >
+          <div
+            className="w-[180px] h-[180px] bg-white rounded-full flex justify-center items-center"
+          >
+            <h1 className="text-2xl font-bold text-red-700">Expertise</h1>
+          </div>
         </div>
-        <div className='lg:w-[60%]'>
-            <h1 className='uppercase text-3xl font-bold text-center pb-3'>welcome to <br/> black sheild global</h1>
-            <p className='text-lg lg:text-start text-justify'>
-                We leverage our extensive network and industry expertise 
-                to deliver tailored services that meet the unique needs of businesses across various sectors. 
-                Our professional team is passionate about connecting organizations with top talent and fostering 
-                an environment of continuous learning and development.
-            </p>
+
+        <div
+          className="relative w-[200px] h-[200px] flex justify-center items-center rounded-full"
+          style={{
+            background: `conic-gradient(
+              #1e3a8a 0% 25%,      /* Dark Blue */
+              #60a5fa 25% 50%,    /* Light Blue */
+              #1e3a8a 50% 75%,    /* Dark Blue */
+              #60a5fa 75% 100%    /* Light Blue */
+            )`,
+          }}
+        >
+          <div
+            className="w-[180px] h-[180px] bg-white rounded-full flex justify-center items-center"
+          >
+            <h1 className="text-2xl font-bold text-red-700">Trustworthy</h1>
+          </div>
         </div>
+
+        <div
+          className="relative w-[200px] h-[200px] flex justify-center items-center rounded-full"
+          style={{
+            background: `conic-gradient(
+              #1e3a8a 0% 25%,      /* Dark Blue */
+              #60a5fa 25% 50%,    /* Light Blue */
+              #1e3a8a 50% 75%,    /* Dark Blue */
+              #60a5fa 75% 100%    /* Light Blue */
+            )`,
+          }}
+        >
+          <div
+            className="w-[180px] h-[180px] bg-white rounded-full flex justify-center items-center"
+          >
+            <h1 className="text-2xl font-bold text-red-700">Global Reach</h1>
+          </div>
+        </div>
+      </section>
     </div>
-  )
+  );
 }
 
-export default Sec1
+export default Sec1;

@@ -1,19 +1,19 @@
-import Nav from "./Nav";
+import Navbar from "./Navbar";
 import Home from "./Home";
 import Sec1 from "./Sec1";
 import Sec2 from "./Sec2";
 import Sec3 from "./Sec3";
-import Sec from "./Sec";
-import About from "./About";
-import Contact from "./Contact";
+import Services from "./Services";
+import Contact from "./Page/Contact";
+import About from "./Page/About";
 
 export {
-    Nav,
+    Navbar,
     Home,
     Sec1,
     Sec2,
     Sec3,
-    Sec,
+    Services,
     About,
     Contact
 }
