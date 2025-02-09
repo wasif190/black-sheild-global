@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link as ScrollLink } from 'react-scroll'; // For smooth scrolling
 import { NavLink, useLocation } from 'react-router-dom'; // For route navigation
-import navLogo from '../assets/bsg-logo.png';
+import navLogo from '../assets/logo-bsg.png';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/16/solid';
 
 function Navbar() {
@@ -94,8 +94,21 @@ function Navbar() {
             <div className={`md:px-[7%] px-[4%] py-4 md:flex justify-between border-b items-center bg-white
                 ${ isUpperNavVisible ? '': 'fixed top-0 left-0 right-0'}`}>
                 <NavLink to="/" onClick={closeMenu}>
-                    <div className='md:w-[240px] w-[200px]'>
-                        <img src={navLogo} alt="Logo" />
+                    <div>
+                        <div className='flex gap-4'>
+                            <div className='md:w-[70px] w-[53px]'>
+                                <img src={navLogo} alt="Logo" />
+                            </div>
+                            <div className='md:mt-1 mt-2'>
+                                <h2 className='uppercase md:text-3xl text-2xl font-extrabold leading-6'>Black she<span className='text-red-600'>el</span>d</h2>
+                                <p className='uppercase md:text-lg'>global</p>
+                                <div className='text-gray-700 flex lg:flex-row flex-col'>
+                                    <p>Registered Under Govt. of India  |</p>  
+                                    <p>Reg No: ACJ-0190</p>
+                                </div>
+                            </div>
+                        </div>
+                        {/* <p className='text-gray-700 ml-[5rem] mt-1.5'>Registered Under Govt. of India  |  Reg No: ACJ-0190</p> */}
                     </div>
                 </NavLink>
 
