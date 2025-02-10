@@ -8,6 +8,9 @@ export default {
     extend: {
       fontFamily: {
         "old-standard": ['Old Standard TT', 'serif'],
+      },
+      screens: {
+        mobile: "300px"
       }
     },
   },

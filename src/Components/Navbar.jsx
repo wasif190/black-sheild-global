@@ -100,8 +100,8 @@ function Navbar() {
                                 <img src={navLogo} alt="Logo" />
                             </div>
                             <div className='md:mt-1 mt-2'>
-                                <h2 className='uppercase md:text-3xl text-2xl font-extrabold leading-6'>Black she<span className='text-red-600'>el</span>d</h2>
-                                <p className='uppercase md:text-lg'>global</p>
+                                <h2 className='uppercase md:text-3xl text-2xl font-extrabold leading-6'>Black sh<span className='text-red-600'>ei</span>ld</h2>
+                                <p className='uppercase md:text-lg font-medium'>global LLP</p>
                                 <div className='text-gray-700 flex lg:flex-row flex-col'>
                                     <p>Registered Under Govt. of India  |</p>  
                                     <p>Reg No: ACJ-0190</p>
